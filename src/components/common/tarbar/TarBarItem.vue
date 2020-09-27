@@ -1,6 +1,6 @@
 <template>
   <div class="tab-bar-item" @click="itemClick">
-    <slot v-if="!isActive" name="item-icon"></slot>
+   <slot v-if="!isActive" name="item-icon"></slot>
     <slot v-else name="item-icon-active"></slot>
     <div :style="isStyleActive">
       <slot name="item-text"></slot>
@@ -19,7 +19,9 @@
             }
         },
         methods: {
+          itemClick(){
 
+          }
         },
         computed: {
 
